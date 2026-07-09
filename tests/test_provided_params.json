@@ -1,0 +1,17 @@
+{
+  "function_name": "GammavetConfirmAvailabilityFn",
+  "test_type": "provided_params",
+  "args": {
+    "respuesta": "Rechazar",
+    "driver_phone": "+56950570324"
+  },
+  "widget_params": {},
+  "prompt": "",
+  "event_type": "function_call",
+  "extra_params": {},
+  "files": [],
+  "metadata": {
+    "description": "Decline path does not call Tenant API and leaves driver unconfirmed",
+    "expected_status": "success"
+  }
+}

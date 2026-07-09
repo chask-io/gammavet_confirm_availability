@@ -1,0 +1,16 @@
+{
+  "function_name": "GammavetConfirmAvailabilityFn",
+  "test_type": "operator_params",
+  "args": {},
+  "widget_params": {},
+  "prompt": "El conductor responde Rechazar a la confirmacion de disponibilidad diaria.",
+  "event_type": "function_call",
+  "extra_params": {
+    "is_operator_params_test": true
+  },
+  "files": [],
+  "metadata": {
+    "description": "Operator should express a negative availability reply without inventing IDs",
+    "expected_status": "success"
+  }
+}

@@ -1,0 +1,37 @@
+function:
+  name: GammavetConfirmAvailabilityFn
+  runtime: python3.12
+  handler: handler.lambda_handler
+  description: |
+    Confirma la disponibilidad diaria de un conductor de Gammavet cuando responde
+    "Confirmar" al mensaje de inicio de jornada. Si responde "Rechazar" o una
+    negativa clara, no confirma disponibilidad y no asigna retiros.
+  timeout: 120
+  memory_size: 256
+
+  layers:
+    - foundationMinimal
+    - foundationApi
+
+  parameters:
+    required: []
+    optional:
+      - name: respuesta
+        type: string
+        description: Texto o payload del boton recibido; valores esperados Confirmar o Rechazar.
+      - name: driver_phone
+        type: string
+        description: Telefono WhatsApp del conductor que respondio, si no viene en el evento.
+      - name: verbose
+        type: boolean
+        description: Activa logging adicional.
+        default: false
+
+  widget:
+    enabled: false
+    type: dynamic_widget
+    params: []
+
+  testing:
+    handles_files: false
+    produces_files: false

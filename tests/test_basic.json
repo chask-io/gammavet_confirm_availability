@@ -1,0 +1,16 @@
+{
+  "function_name": "GammavetConfirmAvailabilityFn",
+  "args": {
+    "respuesta": "Rechazar",
+    "driver_phone": "+56950570324"
+  },
+  "widget_params": {},
+  "prompt": "",
+  "event_type": "function_call",
+  "extra_params": {},
+  "files": [],
+  "metadata": {
+    "description": "Basic test for GammavetConfirmAvailabilityFn",
+    "expected_status": "success"
+  }
+}
